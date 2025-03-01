@@ -3,7 +3,7 @@ from azure.ai.inference.models import SystemMessage, UserMessage
 from azure.core.credentials import AzureKeyCredential
 import os
 
-os.environ["GITHUB_TOKEN"] = "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"
+os.environ["GITHUB_TOKEN"] = "ADD_YOUR_API"
 client = ChatCompletionsClient(
     endpoint="https://models.github.ai/inference",
     credential=AzureKeyCredential(os.environ["GITHUB_TOKEN"]),
